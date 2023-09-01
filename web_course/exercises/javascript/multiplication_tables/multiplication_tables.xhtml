@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html id="multiplication-tables" lang="es" xmlns="http://www.w3.org/1999/xhtml">
+  <body>
+      <h1>Cuadrados naturales</h1>
+      <p>Vea el resultado en la consola del navegador.</p>
+      <script><![CDATA[
+        let matrix = [];
+        for ( let i = 1; i <= 20; ++i) {
+          let tmprow = [];
+          for (let j = 1; j < 20; ++j) {
+            tmprow[j] = i * j;
+          }
+          matrix[i] = tmprow;
+        }
+        console.table(matrix)
+        // for ( let n = 1; n <= 20; ++n )
+        //   console.log('%d^2 = %d', n, n * n);
+      ]]></script>
+  </body>
+</html>

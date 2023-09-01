@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html id="ecci-web" lang="es" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="author" content="Angel Chaves Chinchilla"/>
+    <meta name="copyright" content="© 2011 ECCI-UCR"/>
+    <meta name="keywords" content="intereses, hobbies"/>
+    <title>Pasatiempos e intereses de estudiantes de web de la ECCI</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg"/>
+    <!-- Esto indica que una relacion de hoja de estilos con el archivo screen -->
+    <!-- El media indica para que es la hoja de estilos, si es para un lector
+    de voz, si es para un pantalla normal, para una tv, o si es para todo, o para print  -->
+    <link rel="stylesheet" media="screen" href="css/screen.css"/>
+    <!-- <style>
+      /* aqui indico que los encabezados tendrán color naranjas */
+      h1, h2, h3, h4, h5, h6 { color: orange; }
+      /* el * indica que a todos los elementos les va a aplicar el estilo, en este caso
+      es quitarle las serifas a la fuente. */
+      * {
+        font-family: sans-serif;
+        /* font-family: monospace; */
+      }
+    </style> -->
+  </head>
+  <body>
+    <header id="website-header"> <!--Si fuesemos a tener muchos headers que son encabezados del sitio web, entonces en vez de ponerlo como id lo pongo como class -->
+      <!-- La imagen es un elemento en línea -->
+      <img id="website_logo" src="img/favicon.svg" alt="logo del sitio" width="80" height="60"/>
+      <div id="website-title-and-tagline">
+        <h1 id="website-title">Escuela de Ciencias de la Computación  e Informatica</h1>
+        <p id="tagline">La vida es mas bella con XHTML</p>
+      </div>
+    </header>
+
+    <nav id="website-nav">
+      <ul>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/cursos/">Cursos</a></li>
+        <li><a href="/conozcanos/pasatiempos/">Pasatimepos e intereses</a></li>
+        <li><a href="/docentes/">Docentes</a></li>
+        <li><a href="/asistencias/">Asistencias</a></li>
+        <li><a href="/horarios/">horarios</a></li>
+        <li><a href="/amd/">Personal Administrativo</a></li>
+      </ul>
+    </nav>
+    <main id="main-content"> <!-- para este ejemplo, el main va a tener todo lo que tenga que ver con hobbies e intereses-->
+      <h2>Nuestros intereses y pasatiempos</h2> <!-- El h2 se usa para el nombre de la pagina-->
+      <article>
+        <h3>Todos los intereses identificados</h3>
+          <dl id="hobby_list">
+            <dt id="hobby-read-cartoon">hobby-read-cartoon</dt><dd>leer caricatura</dd>
+            <dt id="hobby_draw_cartoon">hobby_draw_cartoon</dt><dd>hacer caricatura</dd>
+            <dt id="hobby-play-videogames">hobby-play-videogames</dt><dd>jugar videojuegos</dd>
+            <dt id="hobby-watch-sports">hobby-watch-sports</dt><dd>ver futbol</dd>
+            <dt id="hobby_build_videogames">hobby_build_videogames</dt><dd>desarrollar videojuegos</dd>
+          </dl>
+
+      </article>
+
+      <article id="people">
+        <h3>Intereses de nuestra gente</h3>
+
+        <section class="person">
+          <!-- <section class="person" data-last-name="Quesada"> -->
+          <!-- El atributo data le indica al procesador de xhtml que no haga
+          nada con el, solo lo guarde en la lista de atributos del elemento al
+          que hace referencia-->
+          <!-- Esos atributos se usa para pasar información a hojas de estilo 
+          (no se usan mucho) o al comportamiento (behavior)-->
+          
+          <!-- Forma 1 de representar los nombres, es lo menos común -->
+            <!-- <h4><span class="first_name">Diego</span> <span class="last_name1">Barquero</span> 
+            <span class="last_name2">Quesada</span></h4> -->
+          <!-- span signica que quiero rotular un elemento de línea, consumen
+          el menor espacio posible, el próximo eleemnto estará AL LADO -->
+          
+          <!-- Segunda forma, más común y más fácil de trabajar -->
+          <h4 style="color: green; font-weight: bolder;" class="person-name">Diego Barquero Quesada</h4>
+
+          <!-- El h4 es un elemento de bloque, ocupa un espacio horizontal
+          completo, el proximo elemento estará DEBAJO DE ÉL -->
+
+          <p class="birth-date">19/nov/1999</p>
+
+          <address><span class="province">Alajuela</span>, 
+          <span class="county">Central</span>, <span class="district">Tambor</span></address>
+
+          <p class="interest-areas"><![CDATA[me interesa aprende sobre el
+            desarrollo de aplicaciones moviles & IA]]>
+          </p>
+          <!-- El CDATA es para poder poner el &, indica que todo lo que esté
+          entre los [] se pone como caracteres. EN HTML NO HAY CDATA, HAY QUE
+          USAR ENTIDADES -->
+
+          <pre class="interest-areas"><![CDATA[me interesa aprende sobre el
+            desarrollo de aplicaciones moviles & IA]]>
+          </pre>
+          <!-- El pre lo que hace es preservar el formato, preserva los espacios
+          en blanco y el navegador usa una fuete "monoespaciada", este elemento
+          no puede tener muchos eleementos hijos (parrafos o listas, esto no se
+          ve bien)-->
+          
+          <section class="interest-areas">
+            <h5>Areas de interés</h5>
+            <ol>
+              <li>desarrollo de apliaciones web</li>
+              <li>IA</li>
+            </ol>
+          </section>
+
+          <section class="hobbies">
+            <h5>Pasatiempos</h5>
+            <ul>
+              <li><a href="#hobby-read-cartoon">leer snk</a></li>
+              <li><a href="#hobby-play-videogames">jugar al mario kart</a></li>
+              <li><a href="#hobby-watch-sports">ver futbol</a></li>
+              <li><a href="#hobby-watch-sports">ver basket</a></li>
+              <li><a href="https://www.instagram.com/?__coig_restricted=1">Instagram</a></li>
+            </ul>
+          </section>
+        </section>
+
+        <section class="person">
+          <h4 style="color: green; font-weight: bolder;" class="person-name">Angel Chaves Chinchilla</h4>
+          <p class="birth-date"><time datetime="2002-05-13">13/may/2002</time></p>
+          <address><span class="province">Cartago</span>, 
+            <span class="county">Cartago</span>, <span class="district">San Nicolas</span></address>
+  
+        </section>
+
+        <section class="person">
+          <h4 style="color: green; font-weight: bolder;" class="person-name">Jazmin Chinchilla Barboza</h4>
+          <p class="birth-date">17/dec/1968</p>
+          <address><span class="province">Heredia</span>, 
+            <span class="county">Tucurrique</span>, <span class="district">Tambor</span></address>
+  
+        </section>
+      </article>
+    </main> <!-- people -->
+
+    <footer id="website-footer">
+      <small>© ECCI-UCR, Todos los derechos reservadso</small> <!-- small significa que lo vamos a poner en una fuente pequeñita-->
+    </footer>
+  </body>
+</html>

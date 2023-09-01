@@ -1,0 +1,36 @@
+<% layout('layouts/main_layout') %>
+    <div id="game_state" class="box">
+      <div id="game_controls">
+        <button id="toggle_help">Help</button>
+        <fieldset>
+          <legend>Board</legend>
+          <label for="board_rows">Rows</label>
+          <input type="number" id="board_rows" name="board_rows" min="1" max="20" value="4"/><br/>
+          <label for="board_cols">Cols</label>
+          <input type="number" id="board_cols" name="board_cols" min="1" max="20" value="6"/>
+        </fieldset>
+      </div>
+      <div id="players">
+        <div class="player_state"><%= `${it.player.nickname} (${it.player.score})` %></div>
+        <div id="rivals">
+<% it.rivals.forEach((player) => { %>
+          <div class="player_state"><%= `${player.nickname} (${player.score})` %></div>
+<% }); %>
+        </div>
+      </div>
+    </div>
+    <table id="game_board" class="box">
+      <!--
+        <tr>
+          <td class="board_cell circle4"/>
+          <td class="board_cell circle2">
+            <img id="player1" data-row="4" data-col="5" class="player" src="img/pawn.svg" alt="Pawn by Thomas Hirter from the Noun Project"/>
+          </td>
+        </tr>
+      -->
+    </table>
+    <section id="help">
+      <h3>How to play</h3>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <p>t has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </section>

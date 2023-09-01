@@ -1,0 +1,7 @@
+Ejercicio 26 [xml_inventory_3, 20 pts]
+
+Suponga que los activos de su sistema de inventario se relacionan jerárquicamente. Por ejemplo, un inventario para la Escuela de Computación estaría compuesto de un edificio, el cual tiene tiene salas, las salas contienen escritorios, pizarras, teléfonos, computadoras, etc; una computadora tiene procesadores, módulos de memoria RAM, discos duros; y así por el estilo. El cliente necesita además distinguir cuáles activos son fijos y cuáles no, la condición de cada activo (en funcionamiento u ocioso), el estado del activo (buen estado, defectuoso, dañado), y la posibilidad de escribir detalles textuales de cualquier longitud.
+
+La figura Figura 23 muestra un ejemplo de un inventario hipotético. Los rectángulos a la izquierda representan los activos y las flechas hacia la derecha indican los responsables de cada activo. Represente en su documento XML la jerarquía de activos mostrada en esta figura. Sus elementos deben ser genéricos, de tal forma que puedan reutilizarse para inventarios de cualquier otra organización. Sus elementos deben además contener atributos y deben asociarse reflejando la jerarquía natural del inventario. De ser posible, use identificadores en inglés para sus elementos y atributos.
+
+![ejemplo](https://jeisson.ecci.ucr.ac.cr/appweb/material/content/xml/img/xml_inventory.svg)

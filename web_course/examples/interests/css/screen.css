@@ -1,0 +1,168 @@
+/* Fuente importada de google fonts, use font-family: 'Vollkorn', serif; cuando quiera usarala */
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+
+
+
+body {
+  /* el 0 es la única unidad que no necesita especificarle su unidad */
+  margin: 0;
+}
+
+a {
+  /* Le indicamos que los a no tengan ninguna decoraci[on para quitarles el subrayado a esos links */
+  text-decoration: none;
+}
+
+/* el hover es cuando el ratón está encima del elemetno */
+a:hover {
+  text-decoration: underline;
+}
+
+#website-header {
+  /* position: relative; */
+
+  /* indicamos que este será un contender flex */
+  display: flex;
+  /* la dirección principal será de izquierda a derecha */
+  flex-direction: row;
+  /* indica lo que pasa cuando voy haciendo más pequeña lav entana */
+  flex-wrap: nowrap;
+
+  align-items: center;
+  /* para que aparezca centrado */
+  justify-content: center;
+
+  padding: 0.5em;
+}
+
+/* #website_logo {
+
+} */
+
+#website-title-and-tagline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#website-title {
+  /* mueve el titulo mas a la derecha */
+  /* float: right; */
+  /* El position relative, le damos chance al elemento de flotar sobre su
+  posición, lo puedo mover de forma libre. Pero el elemento sigue ocupando el mismo espacio */
+  /* position: relative; */
+  /* ya que la position es relativa, podemos mover de mejor manera al titulo */
+  /* top: -70px;
+  left: 70px; */
+
+  /* en position absoluta, el elemento es puesto a flotar y pierde su espacio en el documento
+  , es decir, ya no ocupa flujo. El flota con respecto a otro eleemento que si tiene flujo.
+  Debemos marcar un padre/ancestro de forma relativa, entonces flotar[a con respecto a el */
+  /* position: absolute;
+  top: -9px;
+  left: 74px; */
+  /* el z index manda el elemento al fondo o al frente de la p[agina, entre más
+  pequeño el número, mas atrás va a estar. FUnciona con absolutos */
+  /* z-index: -1; */
+
+  margin: 0;
+  font-family: 'Vollkorn', serif;
+}
+
+#tagline {
+  margin: 0;
+  font-size: small;
+  font-family: fantasy;
+}
+
+/* Aquí nos referimos específicamente al menú de navegación del sitio */
+#website-nav {
+  /* usamos top y bottom para que el borde solo esté arriba y abajo y no a los lados */
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color: rgb(23, 80, 99);
+  color: white;
+  font-weight: bold;
+
+  
+}  
+
+#website-nav a {
+  /* Le indicamos que herede el menú del navegador */
+  color: inherit;
+}  
+
+/* Estamos con la lista no ordenada del menú */
+#website-nav ul {
+  /* le quitamos el puntito (viñetas) a los elementos de la lista */
+  list-style-type: none;
+  /* le quitamo el padding porque no queremos esa identacion */
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* el space around permite que haya separación entre los elementos del menú */
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+}
+
+/* los eleemntos del menu */
+#website-nav li {
+  /* lo convierte a un eleemnto en linea, así puede quedar con otros elementos al lado */
+  /* display: inline; */
+  /* desaparece el eleemnto */
+  /* display: none; */
+  /* margin: 0 2em; */
+}
+
+
+#website-footer {
+  border-top: 1px solid black;
+}
+
+/* ver media queries en 3.presenetacion.md */
+@media (max-width: 850px) {
+  /* propiedades */
+  #website-nav ul {
+    flex-direction: column;
+  }
+}
+
+/* h1, h2, h3, h4, h5, h6 { */
+  /* color: orange; */
+  /* color: purple;
+} */
+
+/* h3, span {
+  background-color: yellow; */
+  /* Padding es la distancia entre el borde y el contenido */
+  /* padding: 5px; */
+  /* Borde de un pixel, punteado y café */
+  /* border: 1px dashed brown; */
+  /* distancia del borde con los elementos vecinos */
+  /* margin: 1px; */
+  /* Los valores de esta propiedad indican el margen del top, right, buttom y left respectivamente */
+  /* el porcentaje es con respecto al elemento papá */
+  /* margin: 1px 5em 1rem 10%; */
+/* } */
+
+/* * { */
+  /* font-family: sans-serif; */
+  /* font-family: monospace; */
+/* }
+
+body li {
+  color: turquoise;
+  background-color: white;
+}
+
+body { */
+  /* El margen indica el espacio entre elementos, si lo dejo así entonces el top
+  y buttom estarán separados por una fuente, y left y right por 2.5 fuentes */
+  /* margin: 1em 2.5em;
+
+  background-color: lightgray;
+} */

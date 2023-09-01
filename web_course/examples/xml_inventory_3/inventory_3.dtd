@@ -1,0 +1,3 @@
+<!ELEMENT inventory_3 (building+)>
+
+<!ELEMENT building (asset_type, status, condition, )>

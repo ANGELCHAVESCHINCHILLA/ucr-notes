@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE inventory_3 SYSTEM "inventory_3.dtd">
+
+<inventory_3>
+  <building name="ECCI" administrator="Gabriela Barrantes">
+    <asset_type>Activo fijo</asset_type>
+    <status>Buen estado</status>
+    <condition>En funcionamiento</condition>
+
+    <class number="IF305">
+      
+    </class>
+
+  </building>
+
+</inventory_3>

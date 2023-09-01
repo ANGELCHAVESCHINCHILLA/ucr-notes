@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8"/>
+  <title><%= it.title %> - My Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="icon" type="image/svg+xml" href="https://jeisson.ecci.ucr.ac.cr/img/circle1.svg"/>
+<% it.stylesheets.forEach((stylesheet) => { %>
+  <link rel="stylesheet" href="https://jeisson.ecci.ucr.ac.cr/appweb/2021a/ejemplos/board_game_express/views/layouts/&lt;%=&#32;stylesheet&#32;%&gt;"/>
+<% }); %>
+</head>
+<body>
+  <header id="site_header">
+    <h1 id="site_title">Site's header</h1>
+    <p>Home &gt; Breadcrumbs</p>
+  </header>
+  <main id="page_content">
+    <%~ it.body %>
+  </main>
+  <footer id="site_footer">
+    <h2>Site's footer</h2>
+  </footer>
+<% it.scripts.forEach((script) => { %>
+  <script src="https://jeisson.ecci.ucr.ac.cr/appweb/2021a/ejemplos/board_game_express/views/layouts/&lt;%=&#32;script&#32;%&gt;" type="module" defer="defer"></script>
+<% }); %>
+</body>
+</html>

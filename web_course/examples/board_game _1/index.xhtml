@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8"/>
+  <title>My Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="css/board.css"/>
+  <link rel="icon" type="image/svg+xml" href="img/circle1.svg"/>
+</head>
+<body>
+  <header id="site_header">
+    <h1 id="site_title">Site's header</h1>
+    <p>Home &gt; Breadcrumbs</p>
+  </header>
+  <main id="page_content">
+    <form action="game_session" method="post">
+      <fieldset>
+        <legend>User information</legend>
+        <label for="nickname">Nickname:</label>
+        <input type="text" name="nickname" id="nickname" required="required" minlength="3" maxlength="30"/>
+      </fieldset>
+      <button name="new_session">Create new session</button>
+      <fieldset>
+        <legend>Join session</legend>
+        <label for="session_id">Session ID:</label>
+        <input type="number" name="session_id" id="session_id" pattern="[0-9]{5,5}" placeholder="#####"/>
+        <button name="join_session">Join session</button>
+      </fieldset>
+    </form>
+    <section id="help">
+      <h3>How to play</h3>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <p>t has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </section>
+  </main>
+  <footer id="site_footer">
+    <h2>Site's footer</h2>
+  </footer>
+  <script src="js/homepage.js" defer="defer" type="module"></script>
+</body>
+</html>
